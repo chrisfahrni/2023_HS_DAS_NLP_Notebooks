@@ -1,0 +1,12 @@
+name: nlp-gpu
+channels:
+- conda
+- conda-forge
+dependencies:
+- python=3.8.3
+- tensorflow-gpu=2.7.1
+- pip
+- pip:
+  - -r requirements.txt
+variables:
+  TF_FORCE_GPU_ALLOW_GROWTH: "true"
